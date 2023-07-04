@@ -9,27 +9,35 @@ html, body, p, h1, h2, h3 {
     font-size: 16px;
 }
 
-nav {
-    width: 300px;
+.container {
     height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: repeat(16, 1fr);
+}
+
+nav {
+    grid-column: 1 / 4;
+    grid-row: 1 / 17;
     background-color: #1992D3;
 }
 
 nav img {
-    width: 1.5rem;
-    height: 1.5rem;
+    width: 1.3rem;
+    height: 1.3rem;
 
     position: relative;
     top: 5px;
-    margin-right: 12px;
+    margin-right: 15px;
     filter: invert(100%) sepia(0%) saturate(7480%) hue-rotate(281deg) brightness(102%) contrast(105%);
 }
 
-h2 img {
-    width: 3rem;
-    height: 3rem;
+nav h2 img {
+    width: 2.5rem;
+    height: 2.5rem;
     position: relative;
-    top: 7px;
+    top: 10px;
 }
 
 nav h3, nav h2 {
@@ -38,7 +46,7 @@ nav h3, nav h2 {
 }
 
 nav h2 {
-    font-size: 2.7rem;
+    font-size: 2rem;
     margin: 0 0 40px 10px;
 }
 
@@ -49,4 +57,77 @@ nav h3 {
 
 nav .nav-up {
     margin-bottom: 40px;
+}
+
+header {
+    grid-row: 1 / 4;
+    grid-column: 4 / 17;
+    background-color: white;
+    padding: 5px 40px;
+}
+
+header img {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.logo {
+    width: 4rem;
+    height: auto;
+}
+
+.header-up {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 5px;
+}
+
+.fake-input {
+    height: 25px;
+    width: 40vw;
+    background-color: lightgrey;
+    border: 1px solid lightgrey;
+    border-radius: 15px;
+    margin-right: 12vw;
+}
+
+.header-down {
+    display: flex;
+    align-items: center;
+}
+
+.header-down img {
+    width: 6rem;
+    height: auto;
+}
+
+.header-down p {
+    font-size: 0.7rem;
+}
+
+.header-down h3 {
+    font-size: 1.3rem;
+}
+
+.buttons {
+    margin-left: 25vw;
+    display: flex;
+    gap: 25px;
+}
+
+.header-down button {
+    border: 1px solid #1992D3;
+    width: 100px;
+    background-color: #1992D3;
+    color: white;
+    border-radius: 25px;
+    font-size: 1.1rem;
+    padding: 10px 0;
+}
+
+main {
+    background-color: lightgrey;
+    grid-column: 4 / 17;
+    grid-row: 4 / 17;
 }
