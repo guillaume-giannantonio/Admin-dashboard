@@ -1,8 +1,52 @@
 * {
     box-sizing: border-box;
+    font-family: 'Roboto Light', sans-serif;
 }
 
-html, body, p, h1, h2 {
+html, body, p, h1, h2, h3 {
     margin: 0;
     padding: 0;
+    font-size: 16px;
+}
+
+nav {
+    width: 300px;
+    height: 100vh;
+    background-color: #1992D3;
+}
+
+nav img {
+    width: 1.5rem;
+    height: 1.5rem;
+
+    position: relative;
+    top: 5px;
+    margin-right: 12px;
+    filter: invert(100%) sepia(0%) saturate(7480%) hue-rotate(281deg) brightness(102%) contrast(105%);
+}
+
+h2 img {
+    width: 3rem;
+    height: 3rem;
+    position: relative;
+    top: 7px;
+}
+
+nav h3, nav h2 {
+    color: white;
+    font-weight: 500;
+}
+
+nav h2 {
+    font-size: 2.7rem;
+    margin: 0 0 40px 10px;
+}
+
+nav h3 {
+    font-size: 1.2rem;
+    margin: 20px;
+}
+
+nav .nav-up {
+    margin-bottom: 40px;
 }
